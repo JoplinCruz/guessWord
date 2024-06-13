@@ -59,16 +59,16 @@ class GuessWord:
 		self.found: bool = False
 		self.run: bool = True
 		
-		self.choice: str = ""
+		self.choice = ""
 		self.length: int = 0
 		self.wordChoice: list = []
 		self.wrongs: list = []
 		
-		self.language: str = "english"
-		self.message: str = WordList.messages[self.language]["change"].format(self.trying, WordList.messages[self.language]["choice"][0] if self.trying > 1 else WordList.messages[self.language]["choice"][-1])
+		self.language = "english"
+		self.message = WordList.messages[self.language]["change"].format(self.trying, WordList.messages[self.language]["choice"][0] if self.trying > 1 else WordList.messages[self.language]["choice"][-1])
 		
-		self.clearScreen: str = "\033[2J"
-		self.locate = str = "\033[{};{}H"
+		self.clearScree = "\033[2J"
+		self.locate = "\033[{};{}H"
 	
 	
 	def gameBoard(self):
