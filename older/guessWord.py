@@ -34,15 +34,15 @@ class GuessWord:
 		self.found: bool = False
 		self.run: bool = True
 		
-		self.choice: str = ""
+		self.choice = ""
 		self.length: int = 0
 		self.wordChoice: list = []
 		self.wrongs: list = []
 		
-		self.message: str = "You have {} {}.".format(self.trying, "changes" if self.trying > 1 else "change")
+		self.message = "You have {} {}.".format(self.trying, "changes" if self.trying > 1 else "change")
 		
 		self.clearScreen: str = "\033[2J"
-		self.locate = str = "\033[{};{}H"
+		self.locate = "\033[{};{}H"
 	
 	
 	def gameBoard(self):

@@ -14,15 +14,15 @@ class GuessWord:
 		self.found: bool = False
 		self.run: bool = True
 		
-		self.choice: str = ""
+		self.choice = ""
 		self.length: int = 0
 		self.wordChoice: list = []
 		self.wrongs: list = []
 		
-		self.message: str = "Você tem {} {}.".format(self.trying, "chances" if self.trying > 1 else "chance")
+		self.message = "Você tem {} {}.".format(self.trying, "chances" if self.trying > 1 else "chance")
 		
-		self.clearScreen: str = "\033[2J"
-		self.locate = str = "\033[{};{}H"
+		self.clearScreen = "\033[2J"
+		self.locate = "\033[{};{}H"
 	
 	
 	def gameBoard(self):
